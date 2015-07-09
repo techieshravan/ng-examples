@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular JSON Date Converter Filter Example</title>
+  <script data-require="angular.js@*" data-semver="1.4.2" src="https://code.angularjs.org/1.4.2/angular.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="jsonDateConverterExample">
+  <h2>Angular JSON Date Converter Filter Example</h2>
+  <div ng-controller="JsonDateController as dateCtrl">
+    <div>
+      Original JSON Date : {{sampleJsonDate}}
+    </div>
+    <h3>JavaScript dates in different formats :</h3>
+    <div>{{ sampleJsonDate | jsonDate }}</div>
+    <div>{{ sampleJsonDate | jsonDate : 'yyyy-MM-dd' }}</div>
+    <div>{{ sampleJsonDate | jsonDate :'medium' }}</div>
+    <div>{{ sampleJsonDate | jsonDate : 'yyyy-MM-dd HH:mm:ss Z' }}</div>
+  </div>
+</body>
+
+</html>
