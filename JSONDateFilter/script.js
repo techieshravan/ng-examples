@@ -1,4 +1,4 @@
-var jsonDateConverterExample= angular.module('jsonDateConverterExample', [])
+var jsonDateConverterExample = angular.module('jsonDateConverterExample', [])
   .controller('JsonDateController', ['$scope', function($scope) {
     $scope.sampleJsonDate = '\/Date(1433913313004-0800)\/';
 }]);
