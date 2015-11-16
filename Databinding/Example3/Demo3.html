@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="MyApplication1">
+
+<head>
+	<title>Angular Databinding</title>
+</head>
+
+<body ng-controller="MyExampleController">
+
+	<div>
+		<p>Id: {{venue.id}}</p>
+		<p>Name: {{venue.name}}</p>
+		<p>City: {{venue.city}}</p>
+		<p>Country: {{venue.country}}</p>
+		<p>Latitude: {{venue.latitude}}</p>
+		<p>Longitude: {{venue.longitude}}</p>
+		<p>Country: {{venue.country_code}}</p>
+	</div>
+
+	<h2>Venues</h2>
+	<div ng-repeat="v in venues">
+		<h3>Events</h3>
+		<p>Id: {{v.id}}</p>
+		<p>Name: {{v.name}}</p>
+		<p>City: {{v.city}}</p>
+		<p>Country: {{v.country}}</p>
+		<p>Latitude: {{v.latitude}}</p>
+		<p>Longitude: {{v.longitude}}</p>
+		<p>Country: {{v.country_code}}</p>
+	</div>
+
+
+	<script type="text/javascript" src="..\lib\angular.js"></script>
+	<script type="text/javascript" src="Demo3.js"></script>
+</body>
+
+</html>

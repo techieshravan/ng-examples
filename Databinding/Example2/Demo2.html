@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="MyApplication1">
+
+<head>
+	<title>Angular Databinding</title>
+</head>
+
+<body>
+	<div ng-controller="MyExampleController">
+		Name:
+		<input type="text" ng-model="name" />
+
+		<br/>
+		<br/>
+		<br/> Name: <span>{{name}}</span>
+	</div>
+
+	<div ng-controller="MyExampleController">
+		<p>{{name}}</p>
+	</div>
+
+	<script type="text/javascript" src="..\lib\angular.js"></script>
+	<script type="text/javascript" src="Demo2.js"></script>
+</body>
+
+</html>
