@@ -1,0 +1,21 @@
+{
+  "name": "vehicles",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Shravan"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
