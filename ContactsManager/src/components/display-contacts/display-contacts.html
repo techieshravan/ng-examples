@@ -1,0 +1,17 @@
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" *ngFor="#contact of contactsList">
+    <div class="panel panel-primary">
+        <div class="panel-heading">{{contact.name}}</div>
+        <div class="panel-body">
+            <p>{{contact.address}}</p>
+            <p>
+                <span>{{contact.city}}</span>,
+                <span>{{contact.state}}</span>
+                <span>{{contact.zip}}</span>
+            </p>
+            <p>{{email}}</p>
+            <p>
+                <a [href]="'http://twitter.com/' + contact.twitter">@{{contact.twitter}}</a>
+            </p>
+        </div>
+    </div>
+</div>

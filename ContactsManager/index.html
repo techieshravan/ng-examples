@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Angular 2 Contacts Manager</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                src: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('src/boot')
+                .then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<!-- 3. Display the application -->
+<body>
+    <div class="container">
+        <!--<nav class="navbar navbar-default navbar-fixed-top">-->
+            <!--<div class="container-fluid">-->
+                <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+
+                <!--<div class="navbar-header">-->
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle navigation</span>-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                    <!--</button>-->
+                    <!--<a class="navbar-brand" href="#">Angular 2 Contacts Manager</a>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+                <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!--<li class="active"><a href="#">Link1 <span class="sr-only">(current)</span></a></li>-->
+                        <!--<li><a href="#">Link2</a></li>-->
+                    <!--</ul>-->
+                <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+        <!--</nav>-->
+        <h3>Angular 2 Contacts Manager</h3>
+        <contacts-app>Loading...</contacts-app>
+    </div>
+</body>
+
+</html>
