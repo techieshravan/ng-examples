@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>Login Form</h3>
+    <form [ngFormModel]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email"
+                   id="email" [ngFormControl]="loginForm.controls['email']" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password"
+                   id="password" [ngFormControl]="loginForm.controls['password']" />
+
+        </div>
+        <input class="btn btn-default" type="submit"
+               value="Save" [disabled]="!loginForm.valid" />
+    </form>
+</div>
