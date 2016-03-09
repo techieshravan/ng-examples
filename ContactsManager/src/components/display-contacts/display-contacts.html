@@ -1,17 +1,21 @@
-<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" *ngFor="#contact of contactsList">
-    <div class="panel panel-primary">
-        <div class="panel-heading">{{contact.name}}</div>
-        <div class="panel-body">
-            <p>{{contact.address}}</p>
-            <p>
-                <span>{{contact.city}}</span>,
-                <span>{{contact.state}}</span>
-                <span>{{contact.zip}}</span>
-            </p>
-            <p>{{email}}</p>
-            <p>
-                <a [href]="'http://twitter.com/' + contact.twitter">@{{contact.twitter}}</a>
-            </p>
+<div class="mdl-grid">
+    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--3-col-desktop"
+         *ngFor="#contact of contactsList">
+        <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">{{contact.name}}</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+            {{contact.address}}, {{contact.city}}, {{contact.state}} {{contact.zip}}
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+            {{contact.email}}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a [href]="'http://twitter.com/' + contact.twitter" class="mdl-button mdl-js-button mdl-js-ripple-effect">@{{contact.twitter}}</a>
         </div>
     </div>
 </div>
+
+<!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-button&#45;&#45;colored">-->
+<!--<i class="material-icons">add</i>-->
+<!--</button>-->
