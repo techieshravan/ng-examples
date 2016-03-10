@@ -3,12 +3,13 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
 import { CreateContactComponent } from '../create-contact/create-contact.component';
 import { DisplayContactsComponent } from '../display-contacts/display-contacts';
 import { ContactsService } from '../../services/contacts.service';
+import { Logger } from '../../services/logger.service';
 
 @Component({
     selector: 'contacts-app',
     templateUrl: './src/components/app/app.component.html',
     directives: [ROUTER_DIRECTIVES],
-    providers: [ROUTER_PROVIDERS, ContactsService]
+    providers: [ROUTER_PROVIDERS, ContactsService, Logger]
 })
 @RouteConfig([
     {
