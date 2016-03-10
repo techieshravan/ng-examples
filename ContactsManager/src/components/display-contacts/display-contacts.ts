@@ -1,24 +1,23 @@
-import {Component} from "angular2/core";
-import {Contact} from "../../models/contact";
-import {ContactsList} from "../../mock-contacts";
+import { Component, OnInit } from "angular2/core";
+import { Contact } from "../../models/contact";
+import { ContactsService } from "../../services/contacts/contacts.service";
 
 @Component({
     selector: 'display-contacts',
-    templateUrl:'/src/components/display-contacts/display-contacts.html',
-    styles: [`
-        .mdl-card {
-            width: 320px;
-            height: 320px;
-        }
-
-
-        .mdl-card > .mdl-card__title {
-            background: #FF5252;
-            color: #fff;
-            /*background: url('./images/image_card.jpg') bottom right 15% no-repeat #46B6AC;*/
-        }
-    `]
+    templateUrl:'src/components/display-contacts/display-contacts.html',
+    styleUrls: ['src/components/display-contacts/display-contacts.css']
 })
-export class DisplayContactsComponent {
-    contactsList: Contact[] = ContactsList;
+export class DisplayContactsComponent implements OnInit {
+
+    contactsList: Contact[];
+
+    constructor(private _contactsService: ContactsService) {}
+
+    getContacts() {
+      this._contactsService.getContacts().then(contacts => this.contactsList = contacts);
+    }
+
+    ngOnInit() {
+      this.getContacts();
+    }
 }

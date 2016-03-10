@@ -1,6 +1,6 @@
 <article class="template animated slideInRight">
     <h4>Create Contact</h4>
-    <form [ngFormModel]="contactForm" (submit)="doLogin($event)">
+    <form [ngFormModel]="contactForm" (submit)="save(contactForm.value)">
 
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <label class="mdl-textfield__label" for="email">Name</label>
