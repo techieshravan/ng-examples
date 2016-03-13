@@ -1,0 +1,7 @@
+<div class="mdl-grid list-max-width">
+    <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp" *ngFor="#vehicle of vehicles" (click)="onSelect(vehicle)">
+        <div class="mdl-card__media">
+            <img class="article-image" [src]="vehicle.picture"  border="0" alt="" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="mdl-grid"  *ngIf="vehicle">
+    <div class="mdl-cell mdl-cell--4-col">
+        <img [src]='vehicle.picture' border="0" alt="" style="width:100%">
+    </div>
+    <div class="mdl-cell mdl-cell--8-col">
+
+        <p>{{vehicle.make}} {{vehicle.model}}</p>
+
+        <p>Type: {{vehicle.type}}</p>
+
+        <p>License Plate: {{vehicle.licensePlate}}</p>
+
+        <p>Seats: {{vehicle.seats}}</p>
+
+        <p>Rating: {{vehicle.rating}}</p>
+    </div>
+</div>

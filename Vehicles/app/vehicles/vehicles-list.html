@@ -1,6 +1,0 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--3-col" *ngFor="#vehicle of vehicles" (click)="onSelect(vehicle)">
-       <img [src]="vehicle.picture" />
-  </div>
-</div>
-<vehicle-detail [vehicle]="selectedVehicle"></vehicle-detail>

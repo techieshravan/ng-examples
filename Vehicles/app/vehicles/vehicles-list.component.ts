@@ -1,21 +1,19 @@
 import { Component, OnInit } from 'angular2/core';
+import { Router } from 'angular2/router';
 import { Vehicle } from './vehicle';
 import { VehiclesService } from './vehicles.service';
-import { VehicleDetailComponent } from "./vehicle-details.component";
 
 @Component({
     selector: 'vehicles-list',
-    templateUrl: 'app/vehicles/vehicles-list.html',
-    styleUrls: ['app/vehicles/vehicles-list.css'],
-    directives: [VehicleDetailComponent]
+    templateUrl: 'app/vehicles/vehicles-list.component.html',
+    styleUrls: ['app/vehicles/vehicles-list.component.css']
 })
-export class VehiclesListComponent {
+export class VehiclesListComponent implements OnInit {
 
     public title = 'Vehicles List';
     public vehicles: Vehicle[];
-    public selectedVehicle: Vehicle;
 
-    constructor(private _vehiclesService: VehiclesService) { }
+    constructor(private _router: Router, private _vehiclesService: VehiclesService) { }
 
     ngOnInit() {
         this.getVehicles();
@@ -25,7 +23,7 @@ export class VehiclesListComponent {
         this._vehiclesService.getVehicles().then(vehicles => this.vehicles = vehicles);
     }
 
-    onSelect(vehicle) {
-        this.selectedVehicle = vehicle;
+    onSelect(selectedVehicle: Vehicle) {
+        this._router.navigate(['VehicleDetail', { id: selectedVehicle.id }]);
     }
 }
