@@ -9,7 +9,7 @@ export class VehiclesService {
     }
 
     getVehicle(id: number) {
-        let vehicle = VehiclesList.filter(x => x.id == id);
+        let vehicle = VehiclesList.filter(x => x.id === id);
         return Promise.resolve(vehicle[0]);
     }
 }
