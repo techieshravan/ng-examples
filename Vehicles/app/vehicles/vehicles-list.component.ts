@@ -1,16 +1,13 @@
-import {Component} from 'angular2/core';
-import {Vehicle} from '../../models/vehicle';
-import {VehiclesService} from '../../services/vehicles.service';
-import {VehicleDetailComponent} from "../vehicle-detail/vehicle-details";
-import {OnInit} from 'angular2/core';
-
+import { Component, OnInit } from 'angular2/core';
+import { Vehicle } from './vehicle';
+import { VehiclesService } from './vehicles.service';
+import { VehicleDetailComponent } from "./vehicle-details.component";
 
 @Component({
     selector: 'vehicles-list',
-    templateUrl: 'src/components/vehicles-list/vehicles-list.html',
-    styles:[],
-    directives: [VehicleDetailComponent],
-    providers:[VehiclesService]
+    templateUrl: 'app/vehicles/vehicles-list.html',
+    styleUrls: ['app/vehicles/vehicles-list.css'],
+    directives: [VehicleDetailComponent]
 })
 export class VehiclesListComponent {
 

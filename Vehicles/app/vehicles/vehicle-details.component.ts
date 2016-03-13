@@ -1,9 +1,9 @@
 import {Component} from 'angular2/core';
-import {Vehicle} from "../../models/vehicle";
+import {Vehicle} from "./vehicle";
 
 @Component({
     selector: 'vehicle-detail',
-    templateUrl: 'src/components/vehicle-detail/vehicle-detail.html',
+    templateUrl: 'app/vehicles/vehicle-detail.html',
     inputs: ['vehicle']
 })
 export class VehicleDetailComponent {

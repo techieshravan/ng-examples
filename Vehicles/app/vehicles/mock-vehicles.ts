@@ -1,5 +1,5 @@
-import {Vehicle} from '../models/vehicle'
-import {VehiclesPictures} from "../models/vehicles-pictures";
+import { Vehicle } from './vehicle'
+import { VehiclesPictures } from "./vehicles-pictures";
 
 export var VehiclesList: Vehicle[] = [
     {
@@ -9,7 +9,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chrysler",
         type: "Compact",
         seats: 4,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[0] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[0],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -19,7 +19,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Lincoln",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[1] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[1],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -29,7 +29,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Ford",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[2] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[2],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -39,7 +39,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chrysler",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[3] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[3],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -49,7 +49,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chevrolet",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[4] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[4],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -59,7 +59,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chevrolet",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[5] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[5],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -69,7 +69,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Cadillac",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[6] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[6],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -79,7 +79,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Cadilac",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[7] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[7],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -89,7 +89,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chevrolet",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[8] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[8],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -99,7 +99,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Dodge",
         type: "Van",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[9] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[9],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -109,7 +109,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Dodge",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[10] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[10],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -119,7 +119,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Pontiac",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[11] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[11],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -129,7 +129,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Saturn",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[12] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[12],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -139,7 +139,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Pontiac",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[13] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[13],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -149,7 +149,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Pontiac",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[14] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[14],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -159,7 +159,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Buick",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[15] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[15],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -169,7 +169,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chevrolet",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[16] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[16],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -179,7 +179,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Buick",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[17] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[17],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -189,7 +189,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Chevrolet",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[18] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[18],
         rating: Math.floor((Math.random() * 5) + 1)
     },
     {
@@ -199,7 +199,7 @@ export var VehiclesList: Vehicle[] = [
         make: "Pontiac",
         type: "Luxury",
         seats: 7,
-        picture: "data:image/png;base64," + VehiclesPictures.pictures[19] ,
+        picture: "data:image/png;base64," + VehiclesPictures.pictures[19],
         rating: Math.floor((Math.random() * 5) + 1)
     }
 ];

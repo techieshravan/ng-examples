@@ -1,0 +1,14 @@
+<div class="mdl-grid mdl-card mdl-shadow--4dp" *ngIf="vehicle"> 
+    <div class="mdl-card__media mdl-cell mdl-cell--4-col">
+        <img class="article-image" [src]='vehicle.picture' border="0" alt="">
+    </div>
+    <div class="mdl-cell mdl-cell--8-col">
+        <h2 class="mdl-card__title-text">{{vehicle.make}} {{vehicle.model}}</h2>
+        <div class="mdl-card__supporting-text no-left-padding">
+			<span>License Plate: {{vehicle.licensePlate}}</span>
+			<span>Type: {{vehicle.type}}</span>
+			<span>Seats: {{vehicle.seats}}</span>
+			<span>Rating: {{vehicle.rating}}</span>
+        </div>
+    </div>
+</div>
