@@ -6,4 +6,5 @@ export interface Contact {
     zip: string;
     email: string;
     twitter: string;
+    image: string;
 }

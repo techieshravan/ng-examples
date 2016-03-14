@@ -4,7 +4,7 @@ import { ContactsService } from './contacts.service';
 
 @Component({
     selector: 'create-contact',
-    templateUrl: 'app/contacts/create-contact.html'
+    templateUrl: 'app/contacts/create-contact.component.html'
 })
 export class CreateContactComponent {
 

@@ -1,4 +1,4 @@
-import { Contact } from './models/contact';
+import { Contact } from './contact';
 
 export let ContactsList: Contact[] = [
     {
@@ -8,7 +8,8 @@ export let ContactsList: Contact[] = [
         state: 'WA',
         zip: '10999',
         email: 'debra@example.com',
-        twitter: 'debra_example'
+        twitter: 'debra_example',
+        image: 'one.png'
     },
     {
         name: 'Thorsten Weinrich',
@@ -17,7 +18,8 @@ export let ContactsList: Contact[] = [
         state: 'WA',
         zip: '10999',
         email: 'thorsten@example.com',
-        twitter: 'thorsten_example'
+        twitter: 'thorsten_example',
+        image: 'two.png'
     },
     {
         name: 'Yuhong Li',
@@ -26,7 +28,8 @@ export let ContactsList: Contact[] = [
         state: 'WA',
         zip: '10999',
         email: 'yuhong@example.com',
-        twitter: 'yuhong_example'
+        twitter: 'yuhong_example',
+        image: 'one.png'
     },
     {
         name: 'Jon Orton',
@@ -35,7 +38,8 @@ export let ContactsList: Contact[] = [
         state: 'WA',
         zip: '10999',
         email: 'jon@example.com',
-        twitter: 'jon_example'
+        twitter: 'jon_example',
+        image: 'two.png'
     },
     {
         name: 'Diliana Alexieva-Bosseva',
@@ -44,6 +48,7 @@ export let ContactsList: Contact[] = [
         state: 'WA',
         zip: '10999',
         email: 'diliana@example.com',
-        twitter: 'diliana_example'
+        twitter: 'diliana_example',
+        image: 'one.png'
     }
 ];

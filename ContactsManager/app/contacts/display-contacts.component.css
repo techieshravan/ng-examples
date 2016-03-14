@@ -1,4 +1,16 @@
-.mdl-card {
+.mdl-grid {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mdl-card img {
+    width: 100%;
+}
+
+
+/*.mdl-card {
     width: 320px;
     height: 320px;
 }
@@ -6,5 +18,5 @@
 .mdl-card > .mdl-card__title {
     background: #FF5252;
     color: #fff;
-    /*background: url('./images/image_card.jpg') bottom right 15% no-repeat #46B6AC;*/
-}
+    background: url('./images/image_card.jpg') bottom right 15% no-repeat #46B6AC;
+}*/
