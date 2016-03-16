@@ -1,8 +1,6 @@
 import { Component } from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import { CreateContactComponent } from './contacts/create-contact.component';
-import { DisplayContactsComponent } from './contacts/display-contacts.component';
-import { ContactsService } from './contacts/contacts.service';
+import { CreateContactComponent, DisplayContactsComponent, ContactsService } from './contacts/contacts';
 import { Logger } from './logger/logger.service';
 
 @Component({

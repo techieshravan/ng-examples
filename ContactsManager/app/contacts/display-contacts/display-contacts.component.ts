@@ -1,11 +1,11 @@
 import { Component, OnInit } from 'angular2/core';
-import { Contact } from './contact';
-import { ContactsService } from './contacts.service';
+import { Contact } from '../contact';
+import { ContactsService } from '../contacts.service';
 
 @Component({
     selector: 'display-contacts',
-    templateUrl: 'app/contacts/display-contacts.component.html',
-    styleUrls: ['app/contacts/display-contacts.component.css']
+    templateUrl: 'app/contacts/display-contacts/display-contacts.component.html',
+    styleUrls: ['app/contacts/display-contacts/display-contacts.component.css']
 })
 export class DisplayContactsComponent implements OnInit {
 
