@@ -1,15 +1,15 @@
 import { Component, OnInit } from 'angular2/core';
 import { Contact } from '../contact';
-import { ContactCarComponent } from '../contact-card/contact-card.component';
+import { ContactComponent } from '../contact-item/contact-item.component';
 import { ContactsService } from '../contacts.service';
 
 @Component({
-    selector: 'display-contacts',
-    templateUrl: 'app/contacts/display-contacts/display-contacts.component.html',
-    styleUrls: ['app/contacts/display-contacts/display-contacts.component.css'],
-    directives: [ContactCarComponent]
+    selector: 'contacts-list',
+    templateUrl: 'app/contacts/contacts-list/contacts-list.component.html',
+    styleUrls: ['app/contacts/contacts-list/contacts-list.component.css'],
+    directives: [ContactComponent]
 })
-export class DisplayContactsComponent implements OnInit {
+export class ContactsListComponent implements OnInit {
 
     contactsList: Contact[];
 
