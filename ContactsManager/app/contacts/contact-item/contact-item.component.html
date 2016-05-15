@@ -1,15 +1,15 @@
-<div *ngIf="contact" class="mdl-card mdl-shadow--2dp contact-card">
-    <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{contact.name}}</h2>
+<div *ngIf="contact">
+    <div>
+        <h2>{{contact.name}}</h2>
     </div>
-    <div class="mdl-card__supporting-text">
+    <div>
       <p>{{contact.address}}, {{contact.city}}, {{contact.state}} - {{contact.zip}}</p>
     </div>
-    <div class="mdl-card__supporting-text">
+    <div>
         <p>{{contact.email}}</p>
         <p>@{{contact.twitter}}</p>
     </div>
-    <div class="mdl-card__actions">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" (click)="deleteContact()">Delete</button>
+    <div>
+        <button md-raised-button color="warn" (click)="deleteContact()">Delete</button>
     </div>
 </div>

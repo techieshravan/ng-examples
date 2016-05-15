@@ -1,12 +1,14 @@
-import { Component } from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import { ContactsListComponent, CreateContactComponent, ContactsService } from './contacts/contacts';
-import { Logger } from './logger/logger.service';
+import {Component} from '@angular/core';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {ContactsListComponent, CreateContactComponent, ContactsService} from './contacts/contacts';
+import {Logger} from './logger/logger.service';
+import {MdToolbar} from '@angular2-material/toolbar';
 
 @Component({
+    moduleId: module.id,
     selector: 'contacts-app',
-    templateUrl: 'app/app.component.html',
-    directives: [ROUTER_DIRECTIVES],
+    templateUrl: 'app.component.html',
+    directives: [ROUTER_DIRECTIVES, MdToolbar],
     providers: [ROUTER_PROVIDERS, ContactsService, Logger]
 })
 @RouteConfig([
@@ -24,6 +26,6 @@ import { Logger } from './logger/logger.service';
 ])
 export class AppComponent {
     public menuItems = [
-        { name: 'Contacts', link: ['Contacts'] }
+        {name: 'Contacts', link: ['Contacts']}
     ];
 }

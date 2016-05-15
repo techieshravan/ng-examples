@@ -1,7 +1,7 @@
-import { Injectable } from 'angular2/core';
-import { ContactsList } from './mock-contacts';
-import { Contact } from './contact';
-import { Logger } from '../logger/logger.service';
+import {Injectable} from '@angular/core';
+import {ContactsList} from './mock-contacts';
+import {Contact} from './contact';
+import {Logger} from '../logger/logger.service';
 
 @Injectable()
 export class ContactsService {

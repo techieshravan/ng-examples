@@ -1,6 +1,6 @@
-import { Contact } from './contact';
+import {Contact} from './contact';
 
-export let ContactsList: Contact[] = [
+export var ContactsList: Contact[] = [
     {
         name: 'Debra Garcia',
         address: '1234 Main St',

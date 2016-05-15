@@ -1,15 +1,20 @@
-<div class="content mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Contacts Manager</span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-          <!--<a *ngFor="#item of menuItems" [routerLink]="item.link" class="nav-link" href="">{{item.name}}</a>-->
-        <!--<a class="mdl-navigation__link" [routerLink]="links.items">Contacts</a>-->
-      </nav>
-    </div>
-  </header>
-  <main class="mdl-layout__content page-content">
-    <router-outlet></router-outlet>
-  </main>
-</div>
+<!--<div class="content mdl-layout mdl-js-layout mdl-layout&#45;&#45;fixed-header">-->
+  <!--<header class="mdl-layout__header">-->
+    <!--<div class="mdl-layout__header-row">-->
+      <!--<span class="mdl-layout-title">Contacts Manager</span>-->
+      <!--<div class="mdl-layout-spacer"></div>-->
+      <!--<nav class="mdl-navigation">-->
+          <!--&lt;!&ndash;<a *ngFor="#item of menuItems" [routerLink]="item.link" class="nav-link" href="">{{item.name}}</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="mdl-navigation__link" [routerLink]="links.items">Contacts</a>&ndash;&gt;-->
+      <!--</nav>-->
+    <!--</div>-->
+  <!--</header>-->
+  <!--<main class="mdl-layout__content page-content">-->
+      <!--<router-outlet></router-outlet>-->
+  <!--</main>-->
+<!--</div>-->
+
+<md-toolbar color="primary">
+  <span>Contacts Manager</span>
+</md-toolbar>
+<router-outlet></router-outlet>

@@ -1,20 +1,23 @@
-import {Component, Input, Output, EventEmitter} from 'angular2/core';
-import { Contact } from '../contact';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
+import {MdButton} from '@angular2-material/button';
+import {Contact} from '../contact';
 
 @Component({
-    selector: 'contact-card',
-    templateUrl: 'app/contacts/contact-item/contact-item.component.html',
+    moduleId: module.id,
+    selector: 'contact-item',
+    templateUrl: 'contact-item.component.html',
     styles: [`
         .contact-card {
             margin-top: 22px;
         }
-    `]
+    `],
+    directives: [MdButton]
 })
 export class ContactComponent {
-    @Input() contact:Contact;
+    @Input() contact: Contact;
     @Output() delete = new EventEmitter();
 
-    deleteContact(){
+    deleteContact() {
         this.delete.emit(this.contact);
     }
 }

@@ -1,13 +1,7 @@
-<h4>Contacts List</h4>
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--3-col">
-        <ul class="mdl-list">
-            <li class="mdl-list__item mdl-shadow--2dp contact-item" *ngFor="#contact of contacts" (click)="onSelect(contact)">
-                {{contact.name}}
-            </li>
-        </ul>
-    </div>
-    <div class="mdl-cell mdl-cell--9-col">
-        <contact-item [contact]="selectedContact" (delete)="onDelete($event)"></contact-item>
-    </div>
-</div>
+<h2>Contacts List</h2>
+<md-list style="width: 30%; float: left">
+    <md-list-item *ngFor="let contact of contactsList" (click)="onSelect(contact)">
+        {{contact.name}}
+    </md-list-item>
+</md-list>
+<contact-item [contact]="selectedContact" (delete)="onDelete($event)" style="width: 70%; float: right"></contact-item>
