@@ -36,6 +36,7 @@ node_modules
 .idea
 bower_components
 *.js
+!systemjs.config.js
 
 .DS_Store
 
