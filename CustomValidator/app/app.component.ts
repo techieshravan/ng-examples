@@ -1,7 +1,6 @@
-import {Component} from 'angular2/core';
-import {Control, ControlGroup} from 'angular2/common';
-import {FormBuilder, Validators} from 'angular2/common';
-import {CustomValidators} from "./CustomValidators";
+import {Component} from '@angular/core';
+import {ControlGroup, FormBuilder, Validators} from '@angular/common';
+import {CustomValidators} from './CustomValidators';
 
 @Component({
     selector: 'model-driven-forms-app',
