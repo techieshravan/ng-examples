@@ -33,11 +33,34 @@ node_modules
 # Optional REPL history
 .node_repl_history
 
+# IDEs and editors
 .idea
-bower_components
+
 *.js
 !systemjs.config.js
 
-.DS_Store
 
+# compiled output
+dist
+tmp
+
+# dependencies
+node_modules
+bower_components
+
+# misc
+.sass-cache
+connect.lock
+coverage/*
+libpeerconnection.log
+npm-debug.log
+testem.log
 typings
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
