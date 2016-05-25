@@ -1,3 +1,48 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>{{title}}</h1>
+  <hr/>
+  <form role="form" class="form-horizontal">
+    <div class="form-group">
+      <label class="col-md-2 control-label">Loan Amount</label>
+      <div class="col-md-8">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Loan Amount" [(ngModel)]="loanAmount">
+          <span class="input-group-addon">
+            <i class="fa fa-inr"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label">Interest Rate</label>
+      <div class="col-md-8">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Interest Rate" [(ngModel)]="interestRate">
+            <span class="input-group-addon bootstrap-touchspin-postfix">%</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label">Loan Tenure (Months)</label>
+      <div class="col-md-8">
+        <input type="text" class="form-control" placeholder="Loan Tenure (Months)" [(ngModel)]="loanTenure">
+        <!--<div class="input-group">-->
+          <!---->
+        <!--</div>-->
+      </div>
+
+    </div>
+    <button (click)="calculateEmi()">Click Me</button>
+  </form>
+  <hr/>
+  <div class="row" *ngIf="emi">
+    <div class="col-xs-4">Loan EMI</div>
+    <div class="col-xs-4">Total Interest Payable</div>
+    <div class="col-xs-4">Total Payment (Principal + Interest)</div>
+  </div>
+  <div class="row" *ngIf="emi">
+    <div class="col-xs-4">{{emi}}</div>
+    <div class="col-xs-4">{{emi*loanTenure - loanAmount}}</div>
+    <div class="col-xs-4">{{emi*loanTenure}}</div>
+  </div>
+</div>
