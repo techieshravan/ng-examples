@@ -1,20 +1,21 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {Note} from './note'
 
 @Component({
+    moduleId: module.id,
     selector: 'notes-app',
-    templateUrl: 'src/components/notes/notes.html',
-    styles:[],
+    templateUrl: 'notes.component.html',
+    styles: [],
     directives: []
 })
 export class NotesComponent {
 
-    public addNoteText: string;
-    public notes: Note[] = [];
+    public addNoteText:string;
+    public notes:Note[] = [];
 
-    addNote(){
+    addNote() {
 
-        if(this.addNoteText) {
+        if (this.addNoteText) {
             var note = new Note();
             note.noteText = this.addNoteText;
             this.notes.push(note);
@@ -26,8 +27,7 @@ export class NotesComponent {
         }
     }
 
-    deleteNote(note) {
-        console.log('deleteNote');
-        console.log(note);
+    deleteNote(selectedNote) {
+        this.notes = this.notes.filter(n => n.noteText !== selectedNote.noteText);
     }
 }

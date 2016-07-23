@@ -8,7 +8,8 @@
 <div class="container" style="padding:15px">
 
     <div class="input-group">
-        <input type="text" class="form-control" [(ngModel)]="addNoteText" placeholder="new note" (keypress)="($event.which === 13)?addNote():0" />
+        <input type="text" class="form-control" [(ngModel)]="addNoteText" placeholder="new note"
+               (keypress)="($event.which === 13)?addNote():0"/>
         <span class="input-group-btn">
             <button (click)="addNote()" class="btn btn-success">Add Note</button>
         </span>
@@ -16,11 +17,11 @@
     <br/>
     <div class="panel panel-default" *ngIf="notes.length>0">
         <table class="table table-striped">
-            <tr class="list-group" *ngFor="#note of notes">
+            <tr class="list-group" *ngFor="let note of notes">
                 <td>
                     {{note.noteText}}
-                    <button class="btn btn-xs btn-danger pull-right" ng-click="deleteNote(note)">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    <button class="btn btn-xs btn-danger pull-right" (click)="deleteNote(note)">
+                        <span class="glyphicon glyphicon-remove"></span>
                     </button>
                 </td>
             </tr>
