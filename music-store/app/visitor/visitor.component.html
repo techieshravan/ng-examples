@@ -1,0 +1,39 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <!--<div class="mdl-layout__drawer-button">-->
+      <!--<i class="material-icons"></i>-->
+    <!--</div>-->
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">MusicStore</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" routerLink="chart-toppers" routerLinkActive="active">Chart Toppers</a>
+        <a class="mdl-navigation__link" routerLink="help" routerLinkActive="active">Help</a>
+        <a class="mdl-navigation__link" routerLink="home" routerLinkActive="active">Home</a>
+        <a class="mdl-navigation__link" routerLink="login" routerLinkActive="active">Login</a>
+        <a class="mdl-navigation__link" routerLink="new-releases" routerLinkActive="active">New Releases</a>
+        <a class="mdl-navigation__link" routerLink="registration" routerLinkActive="active">Registration</a>
+        <a class="mdl-navigation__link" routerLink="search" routerLinkActive="active">Search</a>
+        <a class="mdl-navigation__link" routerLink="vote" routerLinkActive="active">Vote</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">MusicStore</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" routerLink="chart-toppers" routerLinkActive="active">Chart Toppers</a>
+      <a class="mdl-navigation__link" routerLink="help" routerLinkActive="active">Help</a>
+      <a class="mdl-navigation__link" routerLink="home" routerLinkActive="active">Home</a>
+      <a class="mdl-navigation__link" routerLink="login" routerLinkActive="active">Login</a>
+      <a class="mdl-navigation__link" routerLink="new-releases" routerLinkActive="active">New Releases</a>
+      <a class="mdl-navigation__link" routerLink="registration" routerLinkActive="active">Registration</a>
+      <a class="mdl-navigation__link" routerLink="search" routerLinkActive="active">Search</a>
+      <a class="mdl-navigation__link" routerLink="vote" routerLinkActive="active">Vote</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

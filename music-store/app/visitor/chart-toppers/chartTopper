@@ -1,0 +1,4 @@
+export class ChartTopper {
+  rank: number;
+  song: string;
+}

@@ -1,0 +1,22 @@
+{
+  "votes": [
+    {
+      "id": 1,
+      "itemCode": "ITEM1",
+      "numberOfVotes": 10
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "itemCode": "ITEM1",
+      "title": "",
+      "rate": 100.6,
+      "itemDescription": "",
+      "singer": "",
+      "quantityOnHand": 200,
+      "type": "",
+      "releaseDate": ""
+    }
+  ]
+}

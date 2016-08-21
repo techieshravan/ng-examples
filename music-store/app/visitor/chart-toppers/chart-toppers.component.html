@@ -1,0 +1,21 @@
+<h1>Chart Toppers</h1>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-col">&nbsp;</div>
+  <div class="mdl-cell mdl-cell--8-col">
+    <table class="mdl-data-table mdl-js-data-table" style="width: 100%">
+      <thead>
+      <tr>
+        <th style="width: 10%">Rank</th>
+        <th style="width: 90%" class="mdl-data-table__cell--non-numeric">Song</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let chartTopper of chartToppersList">
+        <td>{{chartTopper.rank}}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{chartTopper.song}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mdl-cell mdl-cell--2-col">&nbsp;</div>
+</div>
