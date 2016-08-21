@@ -1,38 +1,52 @@
 <html>
 
 <head>
-    <base href="/">
-    
-    <title>Contacts Manager</title>
+  <base href="/">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <title>Angular 2 Contacts Manager</title>
 
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />-->
-    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.indigo-red.min.css" />-->
-    <!--<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="app/assets/styles.css" />
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- 1. Load libraries -->
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <!-- Bootstrap Material Design -->
+  <link href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="node_modules/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
 
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-        System.import('app').then(null, console.error.bind(console));
-    </script>
+  <link rel="stylesheet" href="app/assets/styles.css"/>
+
+  <!-- 1. Load libraries -->
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <!-- 2. Configure SystemJS -->
+  <script src="systemjs.config.js"></script>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+
+  <script>
+    System.import('app').catch(function (err) {
+      console.error(err);
+    });
+    $.material.init();
+  </script>
 
 </head>
 
 <body>
-    <contacts-app>Loading...</contacts-app>
+<contacts-app>Loading...</contacts-app>
 </body>
 
 </html>

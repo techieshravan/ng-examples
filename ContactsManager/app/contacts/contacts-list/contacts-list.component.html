@@ -1,7 +1,0 @@
-<h2>Contacts List</h2>
-<md-list style="width: 30%; float: left">
-    <md-list-item *ngFor="let contact of contactsList" (click)="onSelect(contact)">
-        {{contact.name}}
-    </md-list-item>
-</md-list>
-<contact-item [contact]="selectedContact" (delete)="onDelete($event)" style="width: 70%; float: right"></contact-item>

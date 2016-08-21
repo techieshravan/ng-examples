@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="well">
+      <form class="form-horizontal" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <fieldset>
+          <legend>Add Contact</legend>
+
+          <div class="form-group">
+            <label for="name" class="col-md-2 control-label">Name</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="name" name="name"
+                     placeholder="Name"
+                     [(ngModel)]="model.name" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-md-2 control-label">Address</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="address" name="address"
+                     placeholder="Address"
+                     [(ngModel)]="model.address" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-md-2 control-label">City</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="city" name="city"
+                     placeholder="City"
+                     [(ngModel)]="model.city" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-md-2 control-label">State</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="state" name="state"
+                     placeholder="State"
+                     [(ngModel)]="model.state" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-md-2 control-label">Zip</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="zip" name="zip"
+                     placeholder="Zip"
+                     [(ngModel)]="model.zip" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-md-2 control-label">Email</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="email" name="email"
+                     placeholder="Email"
+                     [(ngModel)]="model.email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="col-md-2 control-label">Twitter</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="twitter" name="twitter"
+                     placeholder="Twitter"
+                     [(ngModel)]="model.twitter" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+              <button type="button" class="btn btn-default">Cancel</button>
+              <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>

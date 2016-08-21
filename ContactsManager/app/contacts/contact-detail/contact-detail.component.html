@@ -1,0 +1,57 @@
+<div *ngIf="selectedContact">
+  <h2>{{selectedContact.name}} Contact Details</h2>
+  <div class="row">
+    <div class="col-xs-12">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>{{selectedContact.name}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>{{selectedContact.address}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>{{selectedContact.city}}, {{selectedContact.state}}, {{selectedContact.zip}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-1">
+          <i class="material-icons">email</i>
+        </div>
+        <div class="col-xs-11">
+          {{selectedContact.email}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">&nbsp;</div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-1">
+          <i class="material-icons">share</i>
+        </div>
+        <div class="col-xs-11">
+          {{selectedContact.twitter}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">&nbsp;</div>
+  </div>
+  <a href="javascript:void(0)" class="btn btn-raised btn-danger" (click)="goBack()">
+    Back
+    <div class="ripple-container"></div>
+  </a>
+</div>

@@ -1,0 +1,17 @@
+<h2>Contacts List</h2>
+<p>&nbsp;</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" *ngFor="let contact of contactList">
+
+    <div class="panel panel-danger contact-card" (click)="gotoContact(contact)">
+      <div class="panel-heading">{{contact.name}}</div>
+      <div class="panel-body">
+        <p>{{contact.address}}</p>
+        <p>&nbsp;</p>
+        <p>{{contact.city}}, {{contact.state}}</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+
+  </div>
+</div>
